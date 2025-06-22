@@ -1,0 +1,47 @@
+/* === Admin Navbar Styling (Sunset Version) === */
+.admin-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: linear-gradient(90deg, #ff758c, #ff7eb3); /* Peach to Pink */
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* === Brand Title === */
+.admin-navbar h3 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+/* === Navigation Buttons === */
+.admin-navbar nav {
+  display: flex;
+  gap: 15px;
+}
+
+.admin-navbar nav button {
+  background-color: #ffffff;
+  color: #ff4b6e; /* Matches pink tone */
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-navbar nav button:hover {
+  background-color: #ffe4ec;
+  color: #c2185b;
+  transform: scale(1.05);
+}

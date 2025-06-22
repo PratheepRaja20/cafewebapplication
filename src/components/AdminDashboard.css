@@ -1,0 +1,73 @@
+/* Global font and background */
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background-color: #fffdf9;
+}
+
+/* Main dashboard layout */
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Admin navbar stays on top */
+.admin-dashboard .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #fff8ed;
+  padding: 20px 40px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #3d3d3d;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Main content area */
+.admin-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #fefaf3;
+  border-radius: 18px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.07);
+}
+
+/* Dashboard heading */
+.admin-content h2 {
+  font-size: 26px;
+  color: #444;
+  margin-bottom: 30px;
+  border-left: 5px solid #a0522d;
+  padding-left: 12px;
+}
+
+/* Cards layout */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Each card */
+.card {
+  flex: 1;
+  min-width: 250px;
+  padding: 0px;
+  background: linear-gradient(to right, #ffe9cc, #fff3e0);
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4e342e;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
